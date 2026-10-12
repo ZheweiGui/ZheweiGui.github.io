@@ -84,12 +84,10 @@ h1, h2 { font-family: var(--display); line-height: 1.15; }
 
 .experience-groups { display: grid; grid-template-columns: 1fr; gap: 38px; }
 .experience-category { margin: 0 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); color: var(--orange); font: 700 14px/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; }
-.timeline-item { display: flex; align-items: center; gap: 18px; padding: 12px 0; }
-.institution-logo { flex: 0 0 94px; width: 94px; height: 58px; display: grid; place-items: center; padding: 7px; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 1px 4px rgba(20,20,19,.06); }
-.institution-logo img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
-.institution-logo .logo-wide { max-width: 68px; }
-.institution-logo.nus-logo { place-items: center start; }
-.institution-logo.nus-logo img { width: auto; height: 35px; max-width: none; max-height: none; }
+.timeline-item { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
+.institution-logo { position: relative; flex: 0 0 120px; width: 120px; height: 74px; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 1px 4px rgba(20,20,19,.06); }
+.institution-logo img,
+.institution-logo .logo-wide { position: absolute; inset: 9px; display: block; width: calc(100% - 18px); height: calc(100% - 18px); max-width: none; max-height: none; object-fit: contain; object-position: center; }
 .timeline-item h4 { margin: 0 0 3px; font-size: 17px; line-height: 1.35; }
 .timeline-item p { margin: 0; color: var(--slate); font-size: 15px; line-height: 1.4; }
 .timeline-item .timeline-date { color: var(--quiet); margin-top: 2px; font-size: 14px; }
@@ -123,6 +121,10 @@ footer p { margin: 0; }.footer-note { color: var(--opportunity); }.opportunity-d
   .publication { grid-template-columns: 1fr; gap: 18px; margin-bottom: 42px; }
   .paper-visual { width: min(100%, 340px); }
   .experience-groups { grid-template-columns: 1fr; gap: 30px; }
+  .timeline-item { align-items: flex-start; gap: 14px; }
+  .institution-logo { flex-basis: 92px; width: 92px; height: 66px; }
+  .institution-logo img,
+  .institution-logo .logo-wide { inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); }
   .education-list article { align-items: flex-start; }.education-list .year { flex-basis: 105px; }
   .details-list > div { grid-template-columns: 105px 1fr; }
   footer { grid-template-columns: 1fr; margin-top: 56px; } footer a { justify-self: start; }
