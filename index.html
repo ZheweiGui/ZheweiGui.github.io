@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhewei Gui is a robotics researcher and engineer working on dexterous manipulation, reinforcement learning, and Sim-to-Real.">
+  <meta name="theme-color" content="#faf9f5">
+  <title>Zhewei Gui</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#about"><span class="brand-mark" aria-hidden="true">G</span><strong>Zhewei Gui</strong></a>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-menu">
+        <a href="#about" class="is-active">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container hero" id="about">
+      <div class="portrait-column">
+        <img class="hero-photo" src="./assets/zhewei-gui.png" alt="Portrait of Zhewei Gui" width="210" height="289">
+      </div>
+      <div class="hero-copy">
+        <h1>Zhewei Gui</h1>
+        <p class="email">ZheweiGui [at] outlook [dot] com</p>
+        <p>I am a robotics researcher and engineer working on <strong>dexterous manipulation, reinforcement learning, and Sim-to-Real</strong>. I received my M.Sc. in Robotics from the <a href="https://cde.nus.edu.sg/" target="_blank" rel="noreferrer">National University of Singapore</a> and my B.Eng. from <a href="https://en.tongji.edu.cn/" target="_blank" rel="noreferrer">Tongji University</a>.</p>
+        <p>My research focuses on <strong>low-level dexterous foundation controllers</strong>. I have conducted academic research on <strong>robot learning and control for dexterous manipulation</strong> at Peking University and NUS.</p>
+        <p>In industry, my research focused on <strong>reinforcement learning and Sim-to-Real</strong> at JD, AgiBot, and Fourier Intelligence.</p>
+        <p class="opportunity-note">I am currently seeking full-time industry roles and Ph.D. opportunities in robot learning, dexterous manipulation, and embodied AI.</p>
+        <div class="profile-links" aria-label="Profile links"><span class="profile-contact">WeChat</span><span>/</span><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">GitHub</a><span>/</span><a href="mailto:ZheweiGui@outlook.com">Email</a><span>/</span><a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a></div>
+      </div>
+    </section>
+
+    <section class="container page-section" id="research">
+      <header class="section-heading"><div><h2>Research &amp; Publications</h2></div><p class="section-note">Dexterous manipulation · policy learning</p></header>
+      <div class="rule"></div>
+      <div class="publication-list">
+        <article class="publication" id="dexhot">
+          <a class="paper-visual" href="https://dex-hot.github.io/" target="_blank" rel="noreferrer" aria-label="Open the DexHOT project page"><img src="./assets/dexhot-teaser.jpg" alt="DexHOT configuration transfer and long-horizon tasks" width="1800" height="1012"></a>
+          <div class="paper-copy">
+            <h3>DexHOT: Learning Hand–Object Configuration Transfer for Dexterous Manipulation</h3>
+            <p class="authors"><u>Zhewei Gui</u>*, Anthony Bolton*, Jiyao Zhang‡, Zeyuan Chen, Qiyang Yan, Tianyu Wang, Hao Dong†</p>
+            <p class="venue"><span class="lead-badge">First author</span></p>
+            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexhot-abstract">[abstract]</button><a href="https://dex-hot.github.io/" target="_blank" rel="noreferrer">[website]</a><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">[code]</a></div>
+            <p class="abstract-copy" id="dexhot-abstract">DexHOT formulates dexterous manipulation as hand–object configuration transfer. A single relation-conditioned policy learns from 1.2M feasible configurations across 120 objects and composes long-horizon behaviors through closed-loop subgoals. It achieves 80.5% / 69.4% transfer success on seen / unseen objects in simulation, 61.5% over 200 real-robot transfers, and 90% across six long-horizon tasks.</p>
+          </div>
+        </article>
+
+        <article class="publication" id="dexsin">
+          <a class="paper-visual" href="https://nus-lins-lab.github.io/dexsingweb/" target="_blank" rel="noreferrer" aria-label="Open the DexSinGrasp project page"><img src="./assets/dexsingrasp-teaser.png" alt="DexSinGrasp singulation and grasping results in dense, random, and irregular clutter" width="1740" height="1152"></a>
+          <div class="paper-copy">
+            <h3>DexSinGrasp: Learning a Unified Policy for Dexterous Object Singulation and Grasping in Densely Cluttered Environments</h3>
+            <p class="authors">Lixin Xu*, Zixuan Liu*, <u>Zhewei Gui</u>, Jingxiang Guo, Zeyu Jiang, Tongzhou Zhang, Zhixuan Xu, Chongkai Gao, Lin Shao</p>
+            <p class="venue">IEEE Robotics and Automation Letters (RA-L) · 2025</p>
+            <p class="contribution"><strong>Contribution:</strong> Participated in the RL setting design and completed the sim-to-real system.</p>
+            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexsin-abstract">[abstract]</button><a href="https://arxiv.org/abs/2504.04516" target="_blank" rel="noreferrer">[paper]</a><a href="https://nus-lins-lab.github.io/dexsingweb/" target="_blank" rel="noreferrer">[website]</a><a href="https://github.com/DavidLXu/DexSinGrasp" target="_blank" rel="noreferrer">[code]</a></div>
+            <p class="abstract-copy" id="dexsin-abstract">DexSinGrasp learns a unified policy for dexterous object singulation and grasping in clutter. Curriculum learning improves generalization across diverse clutter conditions, while policy distillation produces a deployable vision-based strategy. Experiments show higher efficiency and grasping success, particularly in dense clutter.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container page-section" id="experience">
+      <h2>Experience</h2>
+      <div class="rule"></div>
+      <div class="experience-groups">
+        <section class="experience-group" aria-labelledby="research-heading">
+          <h3 class="experience-category" id="research-heading">Research</h3>
+          <article class="timeline-item"><div class="institution-logo"><img src="./assets/pku-logo.png" alt="Peking University logo"></div><div><h4>Peking University · Research Assistant</h4><p>Prof. Hao Dong’s group · DexHOT</p><p class="timeline-date">Sep. 2025—Present · Beijing</p></div></article>
+          <article class="timeline-item"><div class="institution-logo nus-logo"><img src="./assets/nus-combined.png" alt="National University of Singapore logo"></div><div><h4>National University of Singapore · Research Intern</h4><p>DexSinGrasp · Advised by Prof. Shao Lin</p><p class="timeline-date">Jan.—Jun. 2025 · Singapore</p></div></article>
+          <article class="timeline-item"><div class="institution-logo"><img src="./assets/tongji-logo.png" alt="Tongji University logo"></div><div><h4>Tongji University · Undergraduate Researcher</h4><p>Prof. Qing Zhang’s group · Machine learning for signal processing</p><p class="timeline-date">Feb. 2023—Dec. 2024 · Shanghai</p></div></article>
+        </section>
+        <section class="experience-group" aria-labelledby="industry-heading">
+          <h3 class="experience-category" id="industry-heading">Industry</h3>
+          <article class="timeline-item"><div class="institution-logo"><img src="./assets/jd-logo.png" alt="JD logo"></div><div><h4>JD</h4><p>General Algorithms · Research Intern · Dexterous manipulation</p><p class="timeline-date">Sep. 2025—Jan. 2026 · Beijing</p></div></article>
+          <article class="timeline-item"><div class="institution-logo"><img class="logo-wide" src="./assets/agibot-logo.png" alt="AgiBot logo"></div><div><h4>AgiBot</h4><p>Embodied Manipulation · Reinforcement Learning Intern · Dexterous manipulation</p><p class="timeline-date">Apr.—Sep. 2025 · Shanghai</p></div></article>
+          <article class="timeline-item"><div class="institution-logo"><img src="./assets/fourier-logo.svg" alt="Fourier Intelligence logo"></div><div><h4>Fourier Intelligence</h4><p>Reinforcement Learning Intern · Biped locomotion · Sim-to-Sim</p><p class="timeline-date">Dec. 2024—Jan. 2025 · Shanghai</p></div></article>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer><p>© <span id="year">2026</span> Zhewei Gui</p><p class="footer-note"><span class="opportunity-dot"></span>Open to industry &amp; Ph.D. opportunities</p><a href="#about">Back to top ↑</a></footer>
+</body>
+</html>
