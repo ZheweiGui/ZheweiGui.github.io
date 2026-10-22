@@ -24,6 +24,15 @@ document.querySelectorAll('.abstract-toggle').forEach((button) => {
   });
 });
 
+const wechatButton = document.querySelector('[data-wechat-open]');
+const wechatDialog = document.querySelector('#wechat-dialog');
+if (wechatButton && wechatDialog) {
+  wechatButton.addEventListener('click', () => wechatDialog.showModal());
+  wechatDialog.addEventListener('click', (event) => {
+    if (event.target === wechatDialog) wechatDialog.close();
+  });
+}
+
 const observer = new IntersectionObserver((entries) => {
   const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
   if (!visible) return;

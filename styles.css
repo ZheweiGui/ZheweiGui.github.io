@@ -53,6 +53,16 @@ h1, h2 { font-family: var(--display); line-height: 1.15; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding-top: 6px; font-size: 15px; }
 .profile-links span { color: #aaa59b; }
 .profile-links .profile-contact { color: var(--slate); }
+.profile-action { appearance: none; margin: 0; padding: 0; border: 0; background: transparent; font: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: .17em; text-decoration-thickness: 1px; cursor: pointer; }
+.profile-action:hover { text-decoration-thickness: 2px; }
+.wechat-dialog { width: min(420px, calc(100% - 32px)); max-height: calc(100vh - 32px); margin: auto; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #fff; color: var(--ink); box-shadow: 0 24px 70px rgba(20,20,19,.28); }
+.wechat-dialog::backdrop { background: rgba(23,23,20,.58); backdrop-filter: blur(3px); }
+.wechat-dialog-card { padding: 14px; }
+.wechat-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 10px; }
+.wechat-dialog-header h2 { margin: 0; font-size: 24px; }
+.wechat-close { width: 36px; height: 36px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); color: var(--ink); font: 400 25px/1 var(--serif); cursor: pointer; }
+.wechat-close:hover { border-color: var(--orange); color: var(--orange); }
+.wechat-dialog img { width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 10px; }
 
 .page-section { padding-top: 56px; }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
