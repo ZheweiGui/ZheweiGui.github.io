@@ -19,7 +19,7 @@
         <a href="#about" class="is-active">About</a>
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
-        <a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a>
+        <!-- Temporarily hidden: <a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a> -->
       </div>
     </div>
   </nav>
@@ -36,7 +36,7 @@
         <p>My research focuses on <strong>low-level dexterous foundation controllers</strong>. I have conducted academic research on <strong>robot learning for dexterous manipulation</strong> at the <a href="https://cfcs.pku.edu.cn/english/about_cfcs/introduction/index.htm" target="_blank" rel="noreferrer">Center on Frontiers of Computing Studies (CFCS)</a> in the School of Computer Science at Peking University, advised by <a href="https://zsdonghao.github.io/" target="_blank" rel="noreferrer">Prof. Hao Dong</a>, and at the LinS Lab at the National University of Singapore, advised by Prof. Lin Shao.</p>
         <p>In industry, my research focused on <strong>reinforcement learning and Sim-to-Real system</strong> at JD, AgiBot, and Fourier Intelligence.</p>
         <p class="opportunity-note">I am currently seeking full-time industry roles and Ph.D. opportunities in robot learning, dexterous manipulation, and embodied AI.</p>
-        <div class="profile-links" aria-label="Profile links"><button class="profile-contact profile-action" type="button" data-wechat-open>WeChat</button><span>/</span><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">GitHub</a><span>/</span><a href="mailto:ZheweiGui@outlook.com">ZheweiGui@outlook.com</a><span>/</span><a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a></div>
+        <div class="profile-links" aria-label="Profile links"><button class="profile-contact profile-action" type="button" data-wechat-open>WeChat</button><span>/</span><!-- Temporarily hidden: <a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">GitHub</a><span>/</span> --><a href="mailto:ZheweiGui@outlook.com">ZheweiGui@outlook.com</a><!-- Temporarily hidden: <span>/</span><a href="./assets/Zhewei_Gui_Resume_2026.pdf" download>Résumé</a> --></div>
       </div>
     </section>
 
@@ -45,12 +45,13 @@
       <div class="rule"></div>
       <div class="publication-list">
         <article class="publication" id="dexhot">
-          <a class="paper-visual dexhot-visual" href="https://dex-hot.github.io/" target="_blank" rel="noreferrer" aria-label="Open the DexHOT project page"><img src="./assets/dexhot-teaser.jpg" alt="DexHOT configuration transfer and long-horizon tasks" width="1800" height="1012"></a>
+          <!-- Temporarily disabled project link: https://dex-hot.github.io/ -->
+          <div class="paper-visual dexhot-visual"><img src="./assets/dexhot-teaser.jpg" alt="DexHOT configuration transfer and long-horizon tasks" width="1800" height="1012"></div>
           <div class="paper-copy">
             <h3>DexHOT: Learning Hand–Object Configuration Transfer for Dexterous Manipulation</h3>
             <p class="authors"><u>Zhewei Gui</u>*, Anthony Bolton*, Jiyao Zhang‡, Zeyuan Chen, Qiyang Yan, Tianyu Wang, Hao Dong†</p>
             <p class="venue"><span class="lead-badge">First author</span></p>
-            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexhot-abstract">[abstract]</button><a href="https://dex-hot.github.io/" target="_blank" rel="noreferrer">[website]</a><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">[code]</a></div>
+            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexhot-abstract">[abstract]</button><!-- Temporarily hidden: <a href="https://dex-hot.github.io/" target="_blank" rel="noreferrer">[website]</a><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">[code]</a> --></div>
             <p class="abstract-copy" id="dexhot-abstract">DexHOT formulates dexterous manipulation as hand–object configuration transfer. A single relation-conditioned policy learns from 1.2M feasible configurations across 120 objects and composes long-horizon behaviors through closed-loop subgoals. It achieves 80.5% / 69.4% transfer success on seen / unseen objects in simulation, 61.5% over 200 real-robot transfers, and 90% across six long-horizon tasks.</p>
           </div>
         </article>
