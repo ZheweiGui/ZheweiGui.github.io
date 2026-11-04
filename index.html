@@ -45,14 +45,13 @@
       <div class="rule"></div>
       <div class="publication-list">
         <article class="publication" id="dexhot">
-          <!-- Temporarily disabled project link: https://dex-hot.github.io/ -->
-          <div class="paper-visual dexhot-visual"><img src="./assets/dexhot-teaser.jpg" alt="DexHOT configuration transfer and long-horizon tasks" width="1800" height="1012"></div>
+          <a class="paper-visual dexhot-visual" href="https://dex-hot.github.io/" target="_blank" rel="noreferrer" aria-label="Open the DexHOT project page"><img src="./assets/dexhot-teaser.jpg" alt="DexHOT configuration transfer and long-horizon tasks" width="1800" height="1012"></a>
           <div class="paper-copy">
             <h3>DexHOT: Learning Hand–Object Configuration Transfer for Dexterous Manipulation</h3>
             <p class="authors"><u>Zhewei Gui</u>*, Anthony Bolton*, Jiyao Zhang‡, Zeyuan Chen, Qiyang Yan, Tianyu Wang, Hao Dong†</p>
-            <p class="venue"><span class="lead-badge">First author</span></p>
-            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexhot-abstract">[abstract]</button><!-- Temporarily hidden: <a href="https://dex-hot.github.io/" target="_blank" rel="noreferrer">[website]</a><a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">[code]</a> --></div>
-            <p class="abstract-copy" id="dexhot-abstract">DexHOT formulates dexterous manipulation as hand–object configuration transfer. A single relation-conditioned policy learns from 1.2M feasible configurations across 120 objects and composes long-horizon behaviors through closed-loop subgoals. It achieves 80.5% / 69.4% transfer success on seen / unseen objects in simulation, 61.5% over 200 real-robot transfers, and 90% across six long-horizon tasks.</p>
+            <p class="venue">arXiv preprint · 2026 <span class="lead-badge">First author</span></p>
+            <div class="paper-actions"><button class="abstract-toggle" type="button" aria-expanded="true" aria-controls="dexhot-abstract">[abstract]</button><a href="https://arxiv.org/abs/2611.05119" target="_blank" rel="noreferrer">[paper]</a><a href="https://dex-hot.github.io/" target="_blank" rel="noreferrer">[website]</a><!-- Temporarily hidden: <a href="https://github.com/dex-hot/DexHOT-Code" target="_blank" rel="noreferrer">[code]</a> --></div>
+            <p class="abstract-copy" id="dexhot-abstract">DexHOT learns a single relation-conditioned policy for dexterous hand–object configuration transfer from synthetic feasible configuration pairs, <strong>without human data during policy training</strong>. At deployment, configuration subgoals enable Any2Any transfers and human demonstration-guided long-horizon tasks. On DexHOTBench with 120 objects, it achieves 80.5% / 69.4% transfer success on seen / unseen objects in simulation, 61.5% over 200 real-robot transfers, and 90% task success across six long-horizon tasks.</p>
           </div>
         </article>
 
