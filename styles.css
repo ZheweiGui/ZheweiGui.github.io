@@ -50,7 +50,7 @@ h1, h2, h3, h4 { color: var(--heading); }
 .caption a { color: var(--slate); }
 .hero-copy { padding-top: 4px; }
 .hero h1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; font-size: clamp(36px, calc(5vw - 4px), 50px); font-weight: 600; letter-spacing: -.035em; margin: 0 0 22px; }
-.hero h1 .name-chinese { font-family: "Noto Serif CJK SC", "Songti SC", SimSun, serif; font-size: 1rem; font-weight: 400; letter-spacing: .06em; color: var(--slate); white-space: nowrap; }
+.hero h1 .name-chinese { font-family: "Noto Serif CJK SC", "Songti SC", SimSun, serif; font-size: calc(1em - 4px); font-weight: 400; letter-spacing: .06em; color: var(--slate); white-space: nowrap; }
 .hero-copy > p { max-width: 690px; margin: 0 0 20px; }
 .hero-copy > p a { text-decoration-thickness: 1.5px; }
 .hero-copy > p a:hover { color: var(--accent-strong); }
