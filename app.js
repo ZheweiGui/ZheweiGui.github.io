@@ -33,6 +33,50 @@ if (wechatButton && wechatDialog) {
   });
 }
 
+const emailToggle = document.querySelector('[data-email-toggle]');
+const emailPanel = document.querySelector('#profile-email');
+if (emailToggle && emailPanel) {
+  const address = emailPanel.querySelector('[data-email-address]');
+  const copyButton = emailPanel.querySelector('[data-email-copy]');
+  const status = emailPanel.querySelector('.email-copy-status');
+
+  emailToggle.addEventListener('click', () => {
+    const expanded = emailToggle.getAttribute('aria-expanded') === 'true';
+    emailToggle.setAttribute('aria-expanded', String(!expanded));
+    emailPanel.hidden = expanded;
+    status.textContent = '';
+  });
+
+  emailPanel.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    emailPanel.hidden = true;
+    emailToggle.setAttribute('aria-expanded', 'false');
+    emailToggle.focus();
+  });
+
+  copyButton.addEventListener('click', async () => {
+    const email = address.textContent.trim();
+    let copied = false;
+    try {
+      await navigator.clipboard.writeText(email);
+      copied = true;
+    } catch {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(address);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        copied = document.execCommand('copy');
+      } catch {
+        copied = false;
+      }
+      if (copied) selection.removeAllRanges();
+    }
+    status.textContent = copied ? 'Copied!' : 'Select the address to copy.';
+  });
+}
+
 const observer = new IntersectionObserver((entries) => {
   const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
   if (!visible) return;

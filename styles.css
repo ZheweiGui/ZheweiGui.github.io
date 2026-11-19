@@ -49,9 +49,9 @@ h1, h2, h3, h4 { color: var(--heading); }
 .caption { color: var(--quiet); text-align: center; font-size: 14px; line-height: 1.45; margin: 9px 0 0; }
 .caption a { color: var(--slate); }
 .hero-copy { padding-top: 4px; }
-.hero h1 { font-size: clamp(40px, 5vw, 54px); font-weight: 600; letter-spacing: -.035em; margin: 0 0 5px; }
-.email { color: var(--slate); font-size: 15px; margin: 0 0 24px; }
-.hero-copy > p:not(.email) { max-width: 690px; margin: 0 0 20px; }
+.hero h1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; font-size: clamp(36px, calc(5vw - 4px), 50px); font-weight: 600; letter-spacing: -.035em; margin: 0 0 22px; }
+.hero h1 .name-chinese { font-family: "Noto Serif CJK SC", "Songti SC", SimSun, serif; font-size: 1rem; font-weight: 400; letter-spacing: .06em; color: var(--slate); white-space: nowrap; }
+.hero-copy > p { max-width: 690px; margin: 0 0 20px; }
 .hero-copy > p a { text-decoration-thickness: 1.5px; }
 .hero-copy > p a:hover { color: var(--accent-strong); }
 .opportunity-note { color: var(--accent-strong); font-weight: 600; }
@@ -60,6 +60,14 @@ h1, h2, h3, h4 { color: var(--heading); }
 .profile-links .profile-contact { color: var(--slate); }
 .profile-action { appearance: none; margin: 0; padding: 0; border: 0; background: transparent; font: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: .17em; text-decoration-thickness: 1px; cursor: pointer; }
 .profile-links .profile-action:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
+.profile-email { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; max-width: 100%; padding: 5px 9px; border: 1px solid var(--accent-line); border-radius: 6px; background: var(--accent-soft); }
+.profile-email[hidden] { display: none; }
+.profile-email .email-address { color: var(--ink); user-select: all; -webkit-user-select: all; overflow-wrap: anywhere; }
+.email-address:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.email-copy { padding: 2px 7px; border: 1px solid var(--accent-line); border-radius: 4px; background: var(--surface); color: var(--accent-strong); font: inherit; font-size: 14px; cursor: pointer; }
+.email-copy:hover { border-color: var(--accent); }
+.email-copy-status { font-size: 14px; }
+.email-copy-status:empty { display: none; }
 .wechat-dialog { width: min(420px, calc(100% - 32px)); max-height: calc(100vh - 32px); margin: auto; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); box-shadow: 0 24px 70px rgba(24,42,67,.24); }
 .wechat-dialog::backdrop { background: rgba(24,42,67,.55); backdrop-filter: blur(3px); }
 .wechat-dialog-card { padding: 14px; }
@@ -131,7 +139,7 @@ footer p { margin: 0; }.footer-note { color: var(--accent-strong); }.opportunity
   .container, footer { width: min(calc(100% - 40px), 520px); }
   .hero { grid-template-columns: 1fr; gap: 24px; padding-top: 30px; }
   .portrait-column { width: min(72%, 280px); margin: 0 auto; }
-  .hero h1 { font-size: 42px; }
+  .hero h1 { font-size: 38px; }
   .page-section { padding-top: 48px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 0; }
   .section-note { margin-top: 4px; }
